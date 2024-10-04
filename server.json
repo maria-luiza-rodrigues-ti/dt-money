@@ -1,0 +1,244 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Freela de website",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2024-10-01T15:04:14.402Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2024-10-01T15:00:14.402Z"
+    },
+    {
+      "id": 3,
+      "description": "Ignite Rocketseat",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1980,
+      "createdAt": "2024-09-01T15:00:14.402Z"
+    },
+    {
+      "description": "Desenvolvimento APP",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-10-02T15:30:57.600Z",
+      "id": 4
+    },
+    {
+      "description": "Iogurte de Banana",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-10-02T15:43:33.501Z",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "description": "Curso de Design Gráfico",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 500,
+      "createdAt": "2024-09-10T13:15:30.402Z"
+    },
+    {
+      "id": 7,
+      "description": "Venda de Produto Digital",
+      "type": "income",
+      "category": "Venda",
+      "price": 2500,
+      "createdAt": "2024-09-15T17:22:50.402Z"
+    },
+    {
+      "id": 8,
+      "description": "Compra de livros",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 180,
+      "createdAt": "2024-09-20T11:45:22.402Z"
+    },
+    {
+      "id": 9,
+      "description": "Pintura Residencial",
+      "type": "income",
+      "category": "Serviços",
+      "price": 3000,
+      "createdAt": "2024-09-22T14:02:15.402Z"
+    },
+    {
+      "id": 10,
+      "description": "Compra de Ração",
+      "type": "outcome",
+      "category": "Pets",
+      "price": 120,
+      "createdAt": "2024-09-25T16:30:40.402Z"
+    },
+    {
+      "id": 11,
+      "description": "Freela de Mobile App",
+      "type": "income",
+      "category": "Venda",
+      "price": 8000,
+      "createdAt": "2024-09-30T19:40:10.402Z"
+    },
+    {
+      "id": 12,
+      "description": "Assinatura de Streaming",
+      "type": "outcome",
+      "category": "Entretenimento",
+      "price": 40,
+      "createdAt": "2024-10-01T12:10:14.402Z"
+    },
+    {
+      "id": 13,
+      "description": "Consultoria Financeira",
+      "type": "income",
+      "category": "Serviços",
+      "price": 1500,
+      "createdAt": "2024-10-02T13:25:14.402Z"
+    },
+    {
+      "id": 14,
+      "description": "Almoço em Restaurante",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 80,
+      "createdAt": "2024-10-02T12:00:14.402Z"
+    },
+    {
+      "id": 15,
+      "description": "Venda de Artesanato",
+      "type": "income",
+      "category": "Venda",
+      "price": 250,
+      "createdAt": "2024-10-02T15:30:14.402Z"
+    },
+    {
+      "id": 16,
+      "description": "Compra de Material de Escritório",
+      "type": "outcome",
+      "category": "Trabalho",
+      "price": 90,
+      "createdAt": "2024-09-05T10:00:14.402Z"
+    },
+    {
+      "id": 17,
+      "description": "Mensalidade Academia",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 150,
+      "createdAt": "2024-09-07T09:00:14.402Z"
+    },
+    {
+      "id": 18,
+      "description": "Reembolso de Transporte",
+      "type": "income",
+      "category": "Reembolso",
+      "price": 200,
+      "createdAt": "2024-09-12T18:15:14.402Z"
+    },
+    {
+      "id": 19,
+      "description": "Freela de Edição de Vídeo",
+      "type": "income",
+      "category": "Serviços",
+      "price": 6000,
+      "createdAt": "2024-09-16T20:30:14.402Z"
+    },
+    {
+      "id": 20,
+      "description": "Compra de Passagem",
+      "type": "outcome",
+      "category": "Transporte",
+      "price": 350,
+      "createdAt": "2024-09-19T13:45:14.402Z"
+    },
+    {
+      "id": 21,
+      "description": "Serviço de Marketing",
+      "type": "income",
+      "category": "Serviços",
+      "price": 5000,
+      "createdAt": "2024-09-21T10:20:14.402Z"
+    },
+    {
+      "id": 22,
+      "description": "Assinatura de Software",
+      "type": "outcome",
+      "category": "Trabalho",
+      "price": 250,
+      "createdAt": "2024-09-24T16:35:14.402Z"
+    },
+    {
+      "id": 23,
+      "description": "Venda de Curso Online",
+      "type": "income",
+      "category": "Venda",
+      "price": 1200,
+      "createdAt": "2024-09-27T18:40:14.402Z"
+    },
+    {
+      "id": 24,
+      "description": "Serviço de Consultoria",
+      "type": "income",
+      "category": "Serviços",
+      "price": 4000,
+      "createdAt": "2024-09-29T12:50:14.402Z"
+    },
+    {
+      "id": 25,
+      "description": "Pagamento de Contas",
+      "type": "outcome",
+      "category": "Despesas",
+      "price": 100,
+      "createdAt": "2024-09-30T14:55:14.402Z"
+    },
+    {
+      "id": 26,
+      "description": "Projeto de Branding",
+      "type": "income",
+      "category": "Serviços",
+      "price": 7000,
+      "createdAt": "2024-10-01T09:00:14.402Z"
+    },
+    {
+      "id": 27,
+      "description": "Jantar em Família",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 200,
+      "createdAt": "2024-10-01T19:15:14.402Z"
+    },
+    {
+      "id": 28,
+      "description": "Freela de Criação de Logo",
+      "type": "income",
+      "category": "Venda",
+      "price": 1800,
+      "createdAt": "2024-10-02T11:45:14.402Z"
+    },
+    {
+      "id": 29,
+      "description": "Compra de Suplementos",
+      "type": "outcome",
+      "category": "Saúde",
+      "price": 300,
+      "createdAt": "2024-10-02T08:20:14.402Z"
+    },
+    {
+      "id": 30,
+      "description": "Manutenção de Computador",
+      "type": "outcome",
+      "category": "Trabalho",
+      "price": 500,
+      "createdAt": "2024-10-03T10:45:14.402Z"
+    }
+  ]
+}
