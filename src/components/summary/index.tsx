@@ -27,6 +27,8 @@ export function Summary() {
               perPage: 1,
               perMove: 1,
               padding: { left: "0", right: "20%" },
+              gap: "1rem",
+              type: "loop",
             },
           },
         }}
@@ -54,7 +56,7 @@ export function Summary() {
         <SplideSlide>
           <SummaryCard variant="green">
             <header>
-              <span>Entradas</span>
+              <span>Total</span>
               <CurrencyDollar size={32} color="#fff" />
             </header>
 
