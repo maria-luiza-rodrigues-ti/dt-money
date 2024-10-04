@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useContextSelector } from "use-context-selector";
 import { Header } from "../../components/header";
 import { Summary } from "../../components/summary";
@@ -13,11 +14,25 @@ import {
   TransactionsContainer,
   TransactionsTable,
 } from "./styles";
+import { CalendarBlank, TagSimple } from "@phosphor-icons/react";
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
     return context.transactions;
   });
+  const [screenWidth, SetScreenWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    SetScreenWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
 
   return (
     <div>
@@ -39,8 +54,12 @@ export function Transactions() {
                       {priceFormatter.format(transaction.price)}
                     </PriceHighlight>
                   </td>
-                  <td>{transaction.category}</td>
                   <td>
+                    {screenWidth > 768 ? "" : <TagSimple />}
+                    {transaction.category}
+                  </td>
+                  <td>
+                    {screenWidth > 768 ? "" : <CalendarBlank />}
                     {dateFormatter.format(new Date(transaction.createdAt))}
                   </td>
                 </tr>

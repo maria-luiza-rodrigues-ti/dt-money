@@ -7,7 +7,7 @@ export const TransactionsContainer = styled.main`
   padding: 0 1.5rem;
 
   @media (max-width: 768px) {
-    margin: 1.5rem auto 0;
+    margin: 1.5rem auto 2rem;
   }
 `
 
@@ -37,7 +37,15 @@ export const TransactionsTable = styled.table`
     padding: 1.25rem 2rem;
     background: ${(props) => props.theme['gray-700']};
 
-    line-height: 1.6;
+    @media (max-width: 768px) {
+      
+      line-height: 1.6;
+
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+    }
+
 
     &:first-child {
       border-top-left-radius: 6px;
