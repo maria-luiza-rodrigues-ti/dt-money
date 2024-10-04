@@ -6,6 +6,7 @@ import { TransactionsContext } from "../../../../contexts/transactions-context";
 import { useContextSelector } from "use-context-selector";
 
 import { SearchFormContainer } from "./styles";
+import { useMobile } from "../../../../hooks/useMobile";
 
 const searchFormSchema = z.object({
   query: z.string(),
@@ -20,6 +21,7 @@ export function SearchForm() {
       return context.fetchTransactions;
     }
   );
+  const isMobile = useMobile();
 
   const {
     register,
@@ -43,7 +45,7 @@ export function SearchForm() {
 
       <button type="submit" disabled={isSubmitting}>
         <MagnifyingGlass size={20} />
-        Buscar
+        {isMobile ? "" : "Buscar"}
       </button>
     </SearchFormContainer>
   );

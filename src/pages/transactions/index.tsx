@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useContextSelector } from "use-context-selector";
 import { Header } from "../../components/header";
 import { Summary } from "../../components/summary";
@@ -15,24 +14,13 @@ import {
   TransactionsTable,
 } from "./styles";
 import { CalendarBlank, TagSimple } from "@phosphor-icons/react";
+import { useMobile } from "../../hooks/useMobile";
 
 export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
     return context.transactions;
   });
-  const [screenWidth, SetScreenWidth] = useState(window.innerWidth);
-
-  function handleWindowSizeChange() {
-    SetScreenWidth(window.innerWidth);
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
+  const isMobile = useMobile();
 
   return (
     <div>
@@ -55,11 +43,11 @@ export function Transactions() {
                     </PriceHighlight>
                   </td>
                   <td>
-                    {screenWidth > 768 ? "" : <TagSimple />}
+                    {isMobile ? <TagSimple /> : ""}
                     {transaction.category}
                   </td>
                   <td>
-                    {screenWidth > 768 ? "" : <CalendarBlank />}
+                    {isMobile ? <CalendarBlank /> : ""}
                     {dateFormatter.format(new Date(transaction.createdAt))}
                   </td>
                 </tr>
