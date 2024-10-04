@@ -31,6 +31,10 @@ export const SummaryCard = styled.div<SummaryCardProps>`
     display: block;
     margin-top: 1rem;
     font-size: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   ${(props) => props.variant === 'green' && css`
