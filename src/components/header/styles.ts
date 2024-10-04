@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
   padding: 2.5rem 0 7.5rem;
 
   @media (max-width: 768px) {
-    padding: 1.5rem 1rem 6.625rem;
+    padding: 1.5rem 1.5rem 6.625rem;
   }
 
   img {
@@ -24,6 +24,10 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 export const NewTransactionButton = styled.button`
