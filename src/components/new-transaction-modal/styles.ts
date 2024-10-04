@@ -21,12 +21,29 @@ export const Content = styled(Dialog.Content)`
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @media (max-width: 768px) {
+    min-width: 100%;
+    padding: 1.25rem 1.25rem 2.5rem;
+
+    transform: translate(0,0);
+    left: 0;
+    top: auto;
+    bottom: 0;
+
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px -4px 32px 0px rgba(0, 0, 0, 0.80);
+  }
+
   form {
     margin-top: 2rem;
 
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (max-width: 768px) {
+      gap: .75rem;
+    }
 
     input {
       border-radius: 6px;
@@ -51,6 +68,10 @@ export const Content = styled(Dialog.Content)`
       margin-top: 1.5rem;
       cursor: pointer;
 
+      @media (max-width: 768px) {
+        margin-top: 1.75rem;
+      }
+
       &:disabled {
         opacity: 0.6;
         cursor: not-allowed;
@@ -61,6 +82,12 @@ export const Content = styled(Dialog.Content)`
         transition: background-color 0.2s;
       }
     }
+  }
+`
+
+export const DialogTitle = styled(Dialog.Title)`
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
   }
 `
 
@@ -81,6 +108,10 @@ export const TransactionType = styled(RadioGroup.Root)`
   gap: 1rem;
 
   margin-top: 0.5rem;
+
+  @media (max-width: 768px) {
+    margin-top: .75rem;
+  }
 `
 
 interface TransactionTypeButtonProps {

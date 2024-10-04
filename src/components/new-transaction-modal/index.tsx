@@ -9,6 +9,7 @@ import { TransactionsContext } from "../../contexts/transactions-context";
 import {
   CloseButton,
   Content,
+  DialogTitle,
   Overlay,
   TransactionType,
   TransactionTypeButton,
@@ -55,7 +56,7 @@ export function NewTransactionModal() {
       <Overlay />
 
       <Content>
-        <Dialog.Title>Nova transação</Dialog.Title>
+        <DialogTitle>Nova transação</DialogTitle>
 
         <CloseButton>
           <X size={24} />
