@@ -20,6 +20,8 @@ export function Transactions() {
   const transactions = useContextSelector(TransactionsContext, (context) => {
     return context.transactions;
   });
+  const transactionsLength = transactions.length;
+
   const isMobile = useMobile();
 
   return (
@@ -28,6 +30,10 @@ export function Transactions() {
       <Summary />
 
       <TransactionsContainer>
+        <div>
+          <h2>Transações</h2>
+          <span>{transactionsLength} itens</span>
+        </div>
         <SearchForm />
 
         <TransactionsTable>

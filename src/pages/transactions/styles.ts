@@ -9,6 +9,21 @@ export const TransactionsContainer = styled.main`
     margin: 1.5rem auto 2rem;
     padding: 0 1.5rem;
   }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+  }
+
+  span {
+    font-size: 1.125rem;
+    color: ${(props) => props.theme['gray-500']};
+  }
 `
 
 export const TransactionsTable = styled.table`
