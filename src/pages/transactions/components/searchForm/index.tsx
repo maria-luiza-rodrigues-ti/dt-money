@@ -12,7 +12,7 @@ const searchFormSchema = z.object({
   query: z.string(),
 });
 
-type SearchFormInputs = z.infer<typeof searchFormSchema>;
+export type SearchFormInputs = z.infer<typeof searchFormSchema>;
 
 export function SearchForm() {
   const fetchTransactions = useContextSelector(
@@ -32,6 +32,7 @@ export function SearchForm() {
   });
 
   async function handleSearchTransactions(data: SearchFormInputs) {
+    console.log(data);
     await fetchTransactions(data.query);
   }
 
